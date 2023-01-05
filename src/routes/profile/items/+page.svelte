@@ -23,7 +23,7 @@
 		<div class="space-y-2">
 			{#each items as item (item?.id)}
 				<a href={`/item/${item?.id}`}>
-					<div class="flex space-x-5 rounded p-2">
+					<div class="flex space-x-5 rounded-xl p-2 hover:bg-base-200">
 						<img
 							class="h-[120px] w-[150px] flex-shrink-0 rounded-xl object-cover"
 							src={pb.getFileUrl(item, item?.photos[0], { thumb: '300x0' })}
@@ -32,9 +32,9 @@
 							height="120"
 						/>
 						<div class="flex h-[120px] w-full flex-col justify-between">
-							<div>
+							<div class="space-y-1">
 								<p class="text-xl ">{item?.name}</p>
-								<p class="text-lg font-medium">{item?.expand?.user?.name}</p>
+								<p class="text font-medium">{item?.expand?.user?.name}</p>
 							</div>
 							<p class="text-xl font-bold">${item?.price}</p>
 						</div>
