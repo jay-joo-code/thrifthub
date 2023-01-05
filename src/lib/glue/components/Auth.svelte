@@ -7,13 +7,13 @@
 
 	const PRIVATE_NAVS = [
 		{
-			label: 'Create listing',
+			label: 'Sell item',
 			path: '/new',
 			icon: IconAdd
 		},
 		{
-			label: 'My listings',
-			path: '/profile/listings',
+			label: 'My items',
+			path: '/profile/items',
 			icon: IconHome
 		}
 	];

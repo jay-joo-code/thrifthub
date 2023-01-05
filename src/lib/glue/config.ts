@@ -3,5 +3,5 @@ interface IPublicNav {
 	label: string;
 }
 
-export const APP_NAME = 'loko meet';
+export const APP_NAME = 'ThriftHub';
 export const PUBLIC_NAVS: IPublicNav[] = [];
