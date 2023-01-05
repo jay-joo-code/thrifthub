@@ -22,8 +22,8 @@
 		<p class="ml-2 text-3xl font-semibold">My items</p>
 		<div class="space-y-2">
 			{#each items as item (item?.id)}
-				<a href={`/item/${item?.id}`}>
-					<div class="flex space-x-5 rounded-xl p-2 hover:bg-base-200">
+				<a href={`/item/edit/${item?.id}`}>
+					<div class="flex space-x-4 rounded-xl p-2 hover:bg-base-200">
 						<img
 							class="h-[120px] w-[150px] flex-shrink-0 rounded-xl object-cover"
 							src={pb.getFileUrl(item, item?.photos[0], { thumb: '300x0' })}
